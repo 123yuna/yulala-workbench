@@ -390,6 +390,21 @@ input::placeholder, textarea::placeholder { color: var(--text3); }
 }
 .card { position: relative; }
 
+/* 备课编辑表单 */
+.edit-form { display: flex; flex-direction: column; gap: 6px; }
+.edit-input {
+  width: 100%; padding: 8px 10px; border: 1.5px solid var(--line); border-radius: 8px;
+  font-size: 13px; color: var(--text); background: #faf8fc; font-family: inherit;
+}
+.edit-input:focus { border-color: var(--pink-dark); outline: none; background: #fff; }
+.edit-textarea {
+  width: 100%; min-height: 80px; padding: 8px 10px; border: 1.5px solid var(--line); border-radius: 8px;
+  font-size: 12px; color: var(--text); background: #faf8fc; font-family: inherit; resize: vertical; line-height: 1.5;
+}
+.edit-textarea:focus { border-color: var(--pink-dark); outline: none; background: #fff; }
+.add-day-card { transition: all .2s; }
+.add-day-card:hover { background: var(--pink-soft) !important; }
+
 /* 拍照上传区 */
 .upload-area {
   border: 2px dashed var(--accent); border-radius: var(--radius-sm);
@@ -634,7 +649,7 @@ function renderHome(root) {
         const total = lessonReview40.length + lessonSummer20.length;
         progress = (rDone + sDone) / total;
         badge = `${rDone+sDone}/${total} 天`;
-        desc = '一轮复习40天 + 暑假备课20天';
+        desc = '一轮复习40天 + 暑假备课25天';
         color = 'c-purple';
         break;
       }
@@ -807,9 +822,17 @@ function renderSelfmediaTopics(picked, subKey) {
 }
 
 /* ===== 备课 ===== */
+function getLessonData(sub) {
+  const base = sub === 'review' ? lessonReview40 : lessonSummer20;
+  const overrides = STORE.get('lesson_'+sub+'_override', {});  // { date: {topic,content,reference,difficulty} }
+  const extras = STORE.get('lesson_'+sub+'_extra', []);        // [{date,topic,content,reference,difficulty}]
+  const merged = base.map(d => overrides[d.date] ? {...d, ...overrides[d.date]} : d);
+  return merged.concat(extras);
+}
+
 function renderLesson(root, cat) {
   const subCards = cat.sub.map(s => {
-    const data = s.key==='review' ? lessonReview40 : lessonSummer20;
+    const data = getLessonData(s.key);
     const done = data.filter(d => progressStore['lesson_'+s.key+'_'+d.date]).length;
     return `<div class="card ${activeSub===s.key?'selected':''}" onclick="activeSub='${s.key}'; renderContent()">
       <div class="icon">${s.icon}</div>
@@ -819,45 +842,183 @@ function renderLesson(root, cat) {
     </div>`;
   }).join('');
 
-  root.innerHTML = `<div class="section-title">${cat.icon} ${cat.name} <span class="sub">按计划稳步推进</span></div>
+  root.innerHTML = `<div class="section-title">${cat.icon} ${cat.name} <span class="sub">按计划稳步推进 · 可编辑/新增</span></div>
     <div class="card-grid">${subCards}</div>`;
 
   if (!activeSub || !['review','summer'].includes(activeSub)) activeSub = 'review';
-  const data = activeSub === 'review' ? lessonReview40 : lessonSummer20;
+  const data = getLessonData(activeSub);
   const todayStr = getTodayStr();
 
   const panel = document.createElement('div');
   panel.className = 'panel';
-  panel.innerHTML = `<div class="panel-title">${activeSub==='review'?SVG.openbook:SVG.sun} ${activeSub==='review'?'一轮复习40天':'暑假备课20天'}</div>
+  const title = activeSub==='review'?'一轮复习40天':'暑假备课25天';
+  panel.innerHTML = `<div class="panel-title">${activeSub==='review'?SVG.openbook:SVG.sun} ${title}</div>
     <div id="plan-days"></div>`;
   root.appendChild(panel);
 
   const container = document.getElementById('plan-days');
-  container.innerHTML = data.map(d => {
+  container.innerHTML = data.map((d, idx) => {
     const key = 'lesson_'+activeSub+'_'+d.date;
     const done = !!progressStore[key];
     const isToday = d.date === todayStr;
     const isPast = d.date < todayStr && !done;
     const upKey = 'lesson_'+activeSub+'_'+d.date+'_imgs';
     const cuKey = 'lesson_'+activeSub+'_'+d.date+'_custom';
+    const editKey = 'edit_'+activeSub+'_'+idx;
+    const isEditing = !!lessonEditStates[editKey];
+    const isExtra = idx >= (activeSub==='review'?lessonReview40.length:lessonSummer20.length);
     return `
-      <div class="plan-day ${isToday?'today':''}">
-        <div class="head">
-          <span class="date">${d.date.replace(/-/g,'.')} · ${d.topic}</span>
-          <span class="difficulty ${d.difficulty==='综合'?'purple':d.difficulty==='中档'?'blue':''}">${d.difficulty}</span>
-        </div>
-        <div class="content">${d.content.map(c=>`· ${esc(c)}`).join('<br>')}</div>
-        <div class="ref">${esc(d.reference)}</div>
-        <div class="btn-row" style="margin-top:8px">
-          <button class="btn ${done?'btn-secondary':'btn-primary'}" onclick="toggleLesson('${activeSub}','${d.date}')">${done?'已完成':'标记完成'}</button>
-          ${isPast?'<span style="color:var(--pink-dark);font-size:11px;margin-top:8px">已逾期，抓紧补上</span>':''}
-        </div>
-        ${renderUploadArea(upKey)}
-        ${renderCustomBlock(cuKey)}
+      <div class="plan-day ${isToday?'today':''}" id="day_${activeSub}_${idx}">
+        ${isEditing ? `
+          <div class="edit-form">
+            <input class="edit-input" id="topic_${editKey}" value="${esc(d.topic)}" placeholder="主题">
+            <input class="edit-input" id="date_${editKey}" value="${d.date}" placeholder="日期 YYYY-MM-DD">
+            <textarea class="edit-textarea" id="content_${editKey}" placeholder="知识点，每行一个">${d.content.map(c=>esc(c)).join('\n')}</textarea>
+            <input class="edit-input" id="ref_${editKey}" value="${esc(d.reference)}" placeholder="参考资料">
+            <select class="edit-input" id="diff_${editKey}">
+              <option ${d.difficulty==='基础'?'selected':''}>基础</option>
+              <option ${d.difficulty==='中档'?'selected':''}>中档</option>
+              <option ${d.difficulty==='综合'?'selected':''}>综合</option>
+            </select>
+            <div class="btn-row" style="margin-top:6px">
+              <button class="btn btn-primary" style="background:var(--pink-dark)" onclick="saveLessonEdit('${activeSub}',${idx})">保存</button>
+              <button class="btn btn-outline" onclick="cancelLessonEdit('${activeSub}',${idx})">取消</button>
+              ${isExtra?`<button class="btn btn-outline" style="color:#e88;margin-left:auto" onclick="deleteLessonExtra('${activeSub}',${idx})">删除这天</button>`:''}
+            </div>
+          </div>
+        ` : `
+          <div class="head">
+            <span class="date">${d.date.replace(/-/g,'.')} · ${esc(d.topic)}</span>
+            <span class="difficulty ${d.difficulty==='综合'?'purple':d.difficulty==='中档'?'blue':''}">${d.difficulty}</span>
+          </div>
+          <div class="content">${d.content.map(c=>`· ${esc(c)}`).join('<br>')}</div>
+          <div class="ref">${esc(d.reference)}</div>
+          <div class="btn-row" style="margin-top:8px">
+            <button class="btn ${done?'btn-secondary':'btn-primary'}" onclick="toggleLesson('${activeSub}','${d.date}')">${done?'已完成':'标记完成'}</button>
+            <button class="btn btn-outline" onclick="startLessonEdit('${activeSub}',${idx})">编辑</button>
+            ${isPast?'<span style="color:var(--pink-dark);font-size:11px;margin-top:8px">已逾期，抓紧补上</span>':''}
+          </div>
+        `}
+        ${!isEditing ? renderUploadArea(upKey) + renderCustomBlock(cuKey) : ''}
       </div>
     `;
   }).join('');
+
+  // 新增一天按钮
+  container.innerHTML += `
+    <div class="plan-day add-day-card" id="add_day_${activeSub}" style="border-left-color:var(--pink-dark);text-align:center;cursor:pointer" onclick="showAddDayForm('${activeSub}')">
+      <div style="font-size:24px;color:var(--pink-dark);margin-bottom:4px">+</div>
+      <div style="font-size:13px;color:var(--pink-dark);font-weight:700">新增一天备课计划</div>
+      <div style="font-size:11px;color:var(--text3);margin-top:2px">自己定义日期和内容</div>
+    </div>
+  `;
   bindUploads();
+}
+
+const lessonEditStates = {};
+
+function startLessonEdit(sub, idx) {
+  lessonEditStates['edit_'+sub+'_'+idx] = true;
+  renderContent();
+  setTimeout(() => {
+    const el = document.getElementById('day_'+sub+'_'+idx);
+    if (el) el.scrollIntoView({behavior:'smooth', block:'center'});
+  }, 50);
+}
+
+function cancelLessonEdit(sub, idx) {
+  delete lessonEditStates['edit_'+sub+'_'+idx];
+  renderContent();
+  setTimeout(() => {
+    const el = document.getElementById('day_'+sub+'_'+idx);
+    if (el) el.scrollIntoView({behavior:'smooth', block:'center'});
+  }, 50);
+}
+
+function saveLessonEdit(sub, idx) {
+  const baseLen = sub==='review' ? lessonReview40.length : lessonSummer20.length;
+  const editKey = 'edit_'+sub+'_'+idx;
+  const topic = document.getElementById('topic_'+editKey).value.trim() || '未命名主题';
+  const date = document.getElementById('date_'+editKey).value.trim();
+  const contentRaw = document.getElementById('content_'+editKey).value;
+  const content = contentRaw.split('\n').map(s=>s.trim()).filter(s=>s);
+  if (content.length === 0) content.push('（待补充）');
+  const reference = document.getElementById('ref_'+editKey).value.trim() || '自定义';
+  const difficulty = document.getElementById('diff_'+editKey).value;
+
+  if (idx < baseLen) {
+    // 覆盖默认数据
+    const overrides = STORE.get('lesson_'+sub+'_override', {});
+    overrides[date] = { topic, content, reference, difficulty };
+    // 如果日期改了，旧日期的 override 要迁移
+    const origDate = (sub==='review'?lessonReview40:lessonSummer20)[idx].date;
+    if (date !== origDate && overrides[origDate]) {
+      delete overrides[origDate];
+    }
+    STORE.set('lesson_'+sub+'_override', overrides);
+  } else {
+    // 编辑新增的天
+    const extras = STORE.get('lesson_'+sub+'_extra', []);
+    const extraIdx = idx - baseLen;
+    if (extras[extraIdx]) {
+      extras[extraIdx] = { date, topic, content, reference, difficulty };
+      STORE.set('lesson_'+sub+'_extra', extras);
+    }
+  }
+  delete lessonEditStates[editKey];
+  renderContent();
+}
+
+function deleteLessonExtra(sub, idx) {
+  const baseLen = sub==='review' ? lessonReview40.length : lessonSummer20.length;
+  const extraIdx = idx - baseLen;
+  const extras = STORE.get('lesson_'+sub+'_extra', []);
+  if (extras[extraIdx]) {
+    if (confirm('确定删除这一天吗？')) {
+      extras.splice(extraIdx, 1);
+      STORE.set('lesson_'+sub+'_extra', extras);
+      delete lessonEditStates['edit_'+sub+'_'+idx];
+      renderContent();
+    }
+  }
+}
+
+function showAddDayForm(sub) {
+  const card = document.getElementById('add_day_'+sub);
+  if (!card) return;
+  card.innerHTML = `
+    <div class="edit-form" style="text-align:left">
+      <input class="edit-input" id="new_topic_${sub}" placeholder="主题，如：圆锥曲线综合复习">
+      <input class="edit-input" id="new_date_${sub}" type="date" value="${getTodayStr()}">
+      <textarea class="edit-textarea" id="new_content_${sub}" placeholder="知识点，每行一个"></textarea>
+      <select class="edit-input" id="new_diff_${sub}">
+        <option>基础</option><option>中档</option><option>综合</option>
+      </select>
+      <div class="btn-row" style="margin-top:6px">
+        <button class="btn btn-primary" style="background:var(--pink-dark)" onclick="addLessonDay('${sub}')">添加</button>
+        <button class="btn btn-outline" onclick="renderContent()">取消</button>
+      </div>
+    </div>
+  `;
+  card.style.cursor = 'default';
+  document.getElementById('new_topic_'+sub).focus();
+}
+
+function addLessonDay(sub) {
+  const topic = document.getElementById('new_topic_'+sub).value.trim() || '自定义备课';
+  const date = document.getElementById('new_date_'+sub).value.trim() || getTodayStr();
+  const contentRaw = document.getElementById('new_content_'+sub).value;
+  const content = contentRaw.split('\n').map(s=>s.trim()).filter(s=>s);
+  if (content.length === 0) content.push('（待补充知识点）');
+  const difficulty = document.getElementById('new_diff_'+sub).value;
+  const extras = STORE.get('lesson_'+sub+'_extra', []);
+  extras.push({ date, topic, content, reference:'自定义', difficulty });
+  STORE.set('lesson_'+sub+'_extra', extras);
+  renderContent();
+  setTimeout(() => {
+    const cards = document.querySelectorAll('#plan-days .plan-day');
+    if (cards.length > 1) cards[cards.length-2].scrollIntoView({behavior:'smooth', block:'center'});
+  }, 50);
 }
 
 function toggleLesson(sub, date) {
