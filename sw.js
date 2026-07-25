@@ -1,4 +1,4 @@
-const CACHE_NAME = 'yulala-workbench-v6';
+const CACHE_NAME = 'yulala-workbench-v7';
 const ASSETS = [
   './',
   './index.html',

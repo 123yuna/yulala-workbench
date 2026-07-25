@@ -92,147 +92,144 @@ const kaoyanPlan = {
   fullTime: [
     // ===== 第一周 7.25-7.31 =====
     { day:1, date:"2026-07-25", weekday:"周六", phase:"全职", tasks:[
-      { subject:"333教育综合", content:"教育学原理：教育概念与本质，梳理框架", hours:2, materials:"《教育学》王道明 第1-2章" },
+      { subject:"333教育综合", content:"中国教育史：先秦教育概述，孔孟荀教育思想", hours:2, materials:"《中国教育史》孙培青 第1-2章" },
       { subject:"803教育管理", content:"教育管理学绪论：学科性质与研究方法", hours:2, materials:"《教育管理学》陈孝彬 第1章" },
-      { subject:"英语二", content:"单词Unit1-2精背 + 长难句3句精析", hours:2, materials:"《恋练有词》+ 真题2010 Text1" },
-      { subject:"333教育综合", content:"中国教育史：先秦教育概述，孔孟荀教育思想", hours:2, materials:"《中国教育史》孙培青 第1-2章" }
-    ]},
-    { day:2, date:"2026-07-26", weekday:"周日", phase:"全职", tasks:[
-      { subject:"333教育综合", content:"教育学原理：教育与社会发展、与人的发展", hours:2, materials:"《教育学》第3-4章" },
-      { subject:"803教育管理", content:"教育管理的历史沿革：中外教育管理发展", hours:2, materials:"《教育管理学》第2章" },
-      { subject:"英语二", content:"单词Unit3-4 + 真题2010 Text2精读", hours:2, materials:"《恋练有词》+ 真题2010" },
+      { subject:"英语二", content:"单词Unit1-2精背 + 真题2010 Text1精读", hours:2, materials:"《恋练有词》+ 真题2010" },
       { subject:"333教育综合", content:"中国教育史：科举制度与古代书院教育", hours:2, materials:"《中国教育史》第3-4章" }
     ]},
-    { day:3, date:"2026-07-27", weekday:"周一", phase:"全职", tasks:[
-      { subject:"333教育综合", content:"教育学原理：教育目的与制度", hours:2, materials:"《教育学》第5-6章" },
-      { subject:"803教育管理", content:"教育管理体制：宏观管理体制与运行机制", hours:2, materials:"《教育管理学》第3章" },
-      { subject:"英语二", content:"单词Unit5-6 + 长难句3句精析", hours:2, materials:"《恋练有词》+ 真题2010 Text3" },
-      { subject:"333教育综合", content:"中国教育史：近代教育改革（洋务/维新/清末）", hours:2, materials:"《中国教育史》第5-6章" }
-    ]},
-    { day:4, date:"2026-07-28", weekday:"周二", phase:"全职", tasks:[
-      { subject:"333教育综合", content:"教育学原理：课程理论与实践", hours:2, materials:"《教育学》第7章" },
-      { subject:"803教育管理", content:"教育政策与教育法律体系", hours:2, materials:"《教育管理学》第4章" },
-      { subject:"英语二", content:"单词Unit7-8 + 真题2010 Text4精读", hours:2, materials:"《恋练有词》+ 真题2010" },
+    { day:2, date:"2026-07-26", weekday:"周日", phase:"全职", tasks:[
+      { subject:"333教育综合", content:"中国教育史：近代教育改革（洋务/维新/清末）", hours:2, materials:"《中国教育史》第5-6章" },
+      { subject:"803教育管理", content:"教育管理的历史沿革：中外教育管理发展", hours:2, materials:"《教育管理学》第2章" },
+      { subject:"英语二", content:"单词Unit3-4背记 + 真题2010 Text2精读", hours:2, materials:"《恋练有词》+ 真题2010" },
       { subject:"333教育综合", content:"中国教育史：民国教育与新学制", hours:2, materials:"《中国教育史》第7章" }
     ]},
-    { day:5, date:"2026-07-29", weekday:"周三", phase:"全职", tasks:[
-      { subject:"333教育综合", content:"教育学原理：教学理论与实践（上）", hours:2, materials:"《教育学》第8章" },
-      { subject:"803教育管理", content:"教育督导与教育评价制度", hours:2, materials:"《教育管理学》第5章" },
-      { subject:"英语二", content:"单词Unit9-10 + 长难句4句精析", hours:2, materials:"《恋练有词》+ 真题2011 Text1" },
-      { subject:"333教育综合", content:"中国教育史：革命根据地教育", hours:2, materials:"《中国教育史》第8章" }
+    { day:3, date:"2026-07-27", weekday:"周一", phase:"全职", tasks:[
+      { subject:"333教育综合", content:"中国教育史：革命根据地教育", hours:2, materials:"《中国教育史》第8章" },
+      { subject:"803教育管理", content:"教育管理体制：宏观管理体制与运行机制", hours:2, materials:"《教育管理学》第3章" },
+      { subject:"英语二", content:"单词Unit5-6背记 + 真题2010 Text3精读", hours:2, materials:"《恋练有词》+ 真题2010" },
+      { subject:"333教育综合", content:"中国教育史：新中国教育改革与发展", hours:2, materials:"《中国教育史》第9章" }
     ]},
-    { day:6, date:"2026-07-30", weekday:"周四", phase:"全职", tasks:[
-      { subject:"333教育综合", content:"教育学原理：教学理论与实践（下）", hours:2, materials:"《教育学》第8章" },
-      { subject:"803教育管理", content:"学校管理：学校组织机构与管理体制", hours:2, materials:"《教育管理学》第6章" },
-      { subject:"英语二", content:"单词Unit11-12 + 真题2011 Text2精读", hours:2, materials:"《恋练有词》+ 真题2011" },
-      { subject:"333教育综合", content:"外国教育史：古希腊罗马教育", hours:2, materials:"《外国教育史》吴式颖 第1-2章" }
-    ]},
-    { day:7, date:"2026-07-31", weekday:"周五", phase:"全职", tasks:[
-      { subject:"333教育综合", content:"教育学原理：德育理论与实践", hours:2, materials:"《教育学》第9章" },
-      { subject:"803教育管理", content:"学校管理：教学管理与科研管理", hours:2, materials:"《教育管理学》第7章" },
-      { subject:"英语二", content:"单词Unit1-12复习测 + 真题2011 Text3精读", hours:2, materials:"《恋练有词》+ 真题2011" },
-      { subject:"333教育综合", content:"外国教育史：中世纪与文艺复兴时期教育", hours:2, materials:"《外国教育史》第3-4章" }
-    ]},
-
-    // ===== 第二周 8.1-8.7 =====
-    { day:8, date:"2026-08-01", weekday:"周六", phase:"全职", tasks:[
-      { subject:"333教育综合", content:"教育学原理：班主任与班级管理", hours:2, materials:"《教育学》第10章" },
-      { subject:"803教育管理", content:"学校管理：德育管理与体育卫生管理", hours:2, materials:"《教育管理学》第8章" },
-      { subject:"英语二", content:"单词Unit13-14 + 真题2011 Text4精读", hours:2, materials:"《恋练有词》+ 真题2011" },
-      { subject:"333教育综合", content:"外国教育史：夸美纽斯与卢梭教育思想", hours:2, materials:"《外国教育史》第5章" }
-    ]},
-    { day:9, date:"2026-08-02", weekday:"周日", phase:"全职", tasks:[
-      { subject:"333教育综合", content:"教育学原理：教师与学生（教原收尾）", hours:2, materials:"《教育学》第11-12章" },
-      { subject:"803教育管理", content:"学校管理：总务管理与校园文化", hours:2, materials:"《教育管理学》第9章" },
-      { subject:"英语二", content:"单词Unit15-16 + 长难句4句精析", hours:2, materials:"《恋练有词》+ 真题2012 Text1" },
-      { subject:"333教育综合", content:"外国教育史：裴斯泰洛齐与赫尔巴特教育思想", hours:2, materials:"《外国教育史》第6章" }
-    ]},
-    { day:10, date:"2026-08-03", weekday:"周一", phase:"全职", tasks:[
-      { subject:"333教育综合", content:"中国教育史：新中国教育改革与发展", hours:2, materials:"《中国教育史》第9章" },
-      { subject:"803教育管理", content:"教育管理者：校长素质与领导艺术", hours:2, materials:"《教育管理学》第10章" },
-      { subject:"英语二", content:"单词Unit17-18 + 真题2012 Text2精读", hours:2, materials:"《恋练有词》+ 真题2012" },
-      { subject:"333教育综合", content:"外国教育史：杜威教育思想体系精讲", hours:2, materials:"《外国教育史》第7章" }
-    ]},
-    { day:11, date:"2026-08-04", weekday:"周二", phase:"全职", tasks:[
+    { day:4, date:"2026-07-28", weekday:"周二", phase:"全职", tasks:[
       { subject:"333教育综合", content:"中国教育史：古代教育家思想对比总结", hours:2, materials:"《中国教育史》专题总结" },
-      { subject:"803教育管理", content:"教育管理中的教师管理", hours:2, materials:"《教育管理学》第11章" },
-      { subject:"英语二", content:"单词Unit19-20 + 真题2012 Text3精读", hours:2, materials:"《恋练有词》+ 真题2012" },
-      { subject:"333教育综合", content:"外国教育史：20世纪教育思潮（进步主义等）", hours:2, materials:"《外国教育史》第8章" }
-    ]},
-    { day:12, date:"2026-08-05", weekday:"周三", phase:"全职", tasks:[
-      { subject:"333教育综合", content:"教育心理学：教育心理学概述与心理发展", hours:2, materials:"《教育心理学》陈琦 第1-2章" },
-      { subject:"803教育管理", content:"教育管理中的学生管理", hours:2, materials:"《教育管理学》第12章" },
-      { subject:"英语二", content:"单词Unit21-22 + 长难句4句精析", hours:2, materials:"《恋练有词》+ 真题2012 Text4" },
-      { subject:"333教育综合", content:"外国教育史：苏联教育思想与现代教育改革", hours:2, materials:"《外国教育史》第9章" }
-    ]},
-    { day:13, date:"2026-08-06", weekday:"周四", phase:"全职", tasks:[
-      { subject:"333教育综合", content:"教育心理学：学习理论（行为主义）", hours:2, materials:"《教育心理学》第3章" },
-      { subject:"803教育管理", content:"教育管理中的课程与教学管理", hours:2, materials:"《教育管理学》第13章" },
-      { subject:"英语二", content:"单词Unit23-24 + 真题2013 Text1精读", hours:2, materials:"《恋练有词》+ 真题2013" },
+      { subject:"803教育管理", content:"教育政策与教育法律体系", hours:2, materials:"《教育管理学》第4章" },
+      { subject:"英语二", content:"单词Unit7-8背记 + 真题2010 Text4精读", hours:2, materials:"《恋练有词》+ 真题2010" },
       { subject:"333教育综合", content:"中国教育史一轮回顾与框架默写", hours:2, materials:"《中国教育史》全册笔记" }
     ]},
-    { day:14, date:"2026-08-07", weekday:"周五", phase:"全职", tasks:[
-      { subject:"333教育综合", content:"教育心理学：学习理论（认知主义与建构主义）", hours:2, materials:"《教育心理学》第4章" },
-      { subject:"803教育管理", content:"教育评价与教育统计基础", hours:2, materials:"《教育管理学》第14章" },
-      { subject:"英语二", content:"单词Unit13-24复习测 + 真题2013 Text2精读", hours:2, materials:"《恋练有词》+ 真题2013" },
-      { subject:"333教育综合", content:"外国教育史一轮回顾与框架默写", hours:2, materials:"《外国教育史》全册笔记" }
+    { day:5, date:"2026-07-29", weekday:"周三", phase:"全职", tasks:[
+      { subject:"333教育综合", content:"中国教育史：真题选择题专项练习", hours:2, materials:"333统考真题汇编" },
+      { subject:"803教育管理", content:"教育督导与教育评价制度", hours:2, materials:"《教育管理学》第5章" },
+      { subject:"英语二", content:"单词Unit9-10背记 + 真题2011 Text1精读", hours:2, materials:"《恋练有词》+ 真题2011" },
+      { subject:"333教育综合", content:"外国教育史：古希腊罗马教育", hours:2, materials:"《外国教育史》吴式颖 第1-2章" }
     ]},
-
-    // ===== 第三周 8.8-8.14 =====
-    { day:15, date:"2026-08-08", weekday:"周六", phase:"全职", tasks:[
-      { subject:"333教育综合", content:"教育心理学：学习动机理论", hours:2, materials:"《教育心理学》第5章" },
-      { subject:"803教育管理", content:"教育管理比较研究：中外管理模式对比", hours:2, materials:"《教育管理学》第15章" },
-      { subject:"英语二", content:"单词Unit25-26 + 真题2013 Text3精读", hours:2, materials:"《恋练有词》+ 真题2013" },
-      { subject:"333教育综合", content:"教育学原理一轮回顾与框架默写", hours:2, materials:"《教育学》全册笔记" }
+    { day:6, date:"2026-07-30", weekday:"周四", phase:"全职", tasks:[
+      { subject:"333教育综合", content:"外国教育史：中世纪与文艺复兴时期教育", hours:2, materials:"《外国教育史》第3-4章" },
+      { subject:"803教育管理", content:"学校管理：学校组织机构与管理体制", hours:2, materials:"《教育管理学》第6章" },
+      { subject:"英语二", content:"单词Unit11-12背记 + 真题2011 Text2精读", hours:2, materials:"《恋练有词》+ 真题2011" },
+      { subject:"333教育综合", content:"外国教育史：夸美纽斯与卢梭教育思想", hours:2, materials:"《外国教育史》第5章" }
     ]},
-    { day:16, date:"2026-08-09", weekday:"周日", phase:"全职", tasks:[
-      { subject:"333教育综合", content:"教育心理学：学习迁移与学习策略", hours:2, materials:"《教育心理学》第6章" },
-      { subject:"803教育管理", content:"教育管理前沿：教育改革与管理创新", hours:2, materials:"《教育管理学》第16章" },
-      { subject:"英语二", content:"单词Unit27-28 + 真题2013 Text4精读", hours:2, materials:"《恋练有词》+ 真题2013" },
-      { subject:"333教育综合", content:"333四科框架整体梳理与知识点串联", hours:2, materials:"333四科框架笔记" }
+    { day:7, date:"2026-07-31", weekday:"周五", phase:"全职", tasks:[
+      { subject:"333教育综合", content:"外国教育史：裴斯泰洛齐与赫尔巴特教育思想", hours:2, materials:"《外国教育史》第6章" },
+      { subject:"803教育管理", content:"学校管理：教学管理与科研管理", hours:2, materials:"《教育管理学》第7章" },
+      { subject:"英语二", content:"单词Unit1-12复习测 + 真题2011 Text3精读", hours:2, materials:"《恋练有词》+ 真题2011" },
+      { subject:"333教育综合", content:"外国教育史：杜威教育思想体系精讲", hours:2, materials:"《外国教育史》第7章" }
     ]},
-    { day:17, date:"2026-08-10", weekday:"周一", phase:"全职", tasks:[
-      { subject:"333教育综合", content:"教育心理学：知识的学习与技能形成", hours:2, materials:"《教育心理学》第7章" },
-      { subject:"803教育管理", content:"教育管理研究方法与课题管理", hours:2, materials:"《教育管理学》第17章" },
-      { subject:"英语二", content:"单词Unit29-30 + 长难句4句精析", hours:2, materials:"《恋练有词》+ 真题2014 Text1" },
-      { subject:"333教育综合", content:"教育学原理：真题选择题专项练习", hours:2, materials:"333统考真题汇编" }
+    // ===== 第二周 8.1-8.7 =====
+    { day:8, date:"2026-08-01", weekday:"周六", phase:"全职", tasks:[
+      { subject:"333教育综合", content:"外国教育史：20世纪教育思潮（进步主义等）", hours:2, materials:"《外国教育史》第8章" },
+      { subject:"803教育管理", content:"学校管理：德育管理与体育卫生管理", hours:2, materials:"《教育管理学》第8章" },
+      { subject:"英语二", content:"单词Unit13-14背记 + 真题2011 Text4精读", hours:2, materials:"《恋练有词》+ 真题2011" },
+      { subject:"333教育综合", content:"外国教育史：苏联教育思想与现代教育改革", hours:2, materials:"《外国教育史》第9章" }
     ]},
-    { day:18, date:"2026-08-11", weekday:"周二", phase:"全职", tasks:[
-      { subject:"333教育综合", content:"教育心理学：问题解决与创造性", hours:2, materials:"《教育心理学》第8章" },
-      { subject:"803教育管理", content:"803教材第1-8章知识点回顾梳理", hours:2, materials:"《教育管理学》笔记" },
-      { subject:"英语二", content:"单词Unit31-32 + 真题2014 Text2精读", hours:2, materials:"《恋练有词》+ 真题2014" },
-      { subject:"333教育综合", content:"中国教育史：真题选择题专项练习", hours:2, materials:"333统考真题汇编" }
-    ]},
-    { day:19, date:"2026-08-12", weekday:"周三", phase:"全职", tasks:[
-      { subject:"333教育综合", content:"教育心理学：品德发展与心理健康教育", hours:2, materials:"《教育心理学》第9章" },
-      { subject:"803教育管理", content:"803教材第9-17章知识点回顾梳理", hours:2, materials:"《教育管理学》笔记" },
-      { subject:"英语二", content:"单词Unit33-34 + 真题2014 Text3精读", hours:2, materials:"《恋练有词》+ 真题2014" },
+    { day:9, date:"2026-08-02", weekday:"周日", phase:"全职", tasks:[
+      { subject:"333教育综合", content:"外国教育史一轮回顾与框架默写", hours:2, materials:"《外国教育史》全册笔记" },
+      { subject:"803教育管理", content:"学校管理：总务管理与校园文化", hours:2, materials:"《教育管理学》第9章" },
+      { subject:"英语二", content:"单词Unit15-16背记 + 真题2012 Text1精读", hours:2, materials:"《恋练有词》+ 真题2012" },
       { subject:"333教育综合", content:"外国教育史：真题选择题专项练习", hours:2, materials:"333统考真题汇编" }
     ]},
-    { day:20, date:"2026-08-13", weekday:"周四", phase:"全职", tasks:[
+    { day:10, date:"2026-08-03", weekday:"周一", phase:"全职", tasks:[
+      { subject:"333教育综合", content:"教育心理学：教育心理学概述与心理发展", hours:2, materials:"《教育心理学》陈琦 第1-2章" },
+      { subject:"803教育管理", content:"教育管理者：校长素质与领导艺术", hours:2, materials:"《教育管理学》第10章" },
+      { subject:"英语二", content:"单词Unit17-18背记 + 真题2012 Text2精读", hours:2, materials:"《恋练有词》+ 真题2012" },
+      { subject:"333教育综合", content:"教育心理学：学习理论（行为主义）", hours:2, materials:"《教育心理学》第3章" }
+    ]},
+    { day:11, date:"2026-08-04", weekday:"周二", phase:"全职", tasks:[
+      { subject:"333教育综合", content:"教育心理学：学习理论（认知主义与建构主义）", hours:2, materials:"《教育心理学》第4章" },
+      { subject:"803教育管理", content:"教育管理中的教师管理", hours:2, materials:"《教育管理学》第11章" },
+      { subject:"英语二", content:"单词Unit19-20背记 + 真题2012 Text3精读", hours:2, materials:"《恋练有词》+ 真题2012" },
+      { subject:"333教育综合", content:"教育心理学：学习动机理论", hours:2, materials:"《教育心理学》第5章" }
+    ]},
+    { day:12, date:"2026-08-05", weekday:"周三", phase:"全职", tasks:[
+      { subject:"333教育综合", content:"教育心理学：学习迁移与学习策略", hours:2, materials:"《教育心理学》第6章" },
+      { subject:"803教育管理", content:"教育管理中的学生管理", hours:2, materials:"《教育管理学》第12章" },
+      { subject:"英语二", content:"单词Unit21-22背记 + 真题2012 Text4精读", hours:2, materials:"《恋练有词》+ 真题2012" },
+      { subject:"333教育综合", content:"教育心理学：知识的学习与技能形成", hours:2, materials:"《教育心理学》第7章" }
+    ]},
+    { day:13, date:"2026-08-06", weekday:"周四", phase:"全职", tasks:[
+      { subject:"333教育综合", content:"教育心理学：问题解决与创造性", hours:2, materials:"《教育心理学》第8章" },
+      { subject:"803教育管理", content:"教育管理中的课程与教学管理", hours:2, materials:"《教育管理学》第13章" },
+      { subject:"英语二", content:"单词Unit23-24背记 + 真题2013 Text1精读", hours:2, materials:"《恋练有词》+ 真题2013" },
+      { subject:"333教育综合", content:"教育心理学：品德发展与心理健康教育", hours:2, materials:"《教育心理学》第9章" }
+    ]},
+    { day:14, date:"2026-08-07", weekday:"周五", phase:"全职", tasks:[
       { subject:"333教育综合", content:"教育心理学：教师心理与课堂管理", hours:2, materials:"《教育心理学》第10章" },
+      { subject:"803教育管理", content:"教育评价与教育统计基础", hours:2, materials:"《教育管理学》第14章" },
+      { subject:"英语二", content:"单词Unit13-24复习测 + 真题2013 Text2精读", hours:2, materials:"《恋练有词》+ 真题2013" },
+      { subject:"333教育综合", content:"教育心理学一轮回顾与框架默写", hours:2, materials:"《教育心理学》全册笔记" }
+    ]},
+    // ===== 第三周 8.8-8.14 =====
+    { day:15, date:"2026-08-08", weekday:"周六", phase:"全职", tasks:[
+      { subject:"333教育综合", content:"教育心理学：真题选择题专项练习", hours:2, materials:"333统考真题汇编" },
+      { subject:"803教育管理", content:"教育管理比较研究：中外管理模式对比", hours:2, materials:"《教育管理学》第15章" },
+      { subject:"英语二", content:"单词Unit25-26背记 + 真题2013 Text3精读", hours:2, materials:"《恋练有词》+ 真题2013" },
+      { subject:"333教育综合", content:"教育学原理：教育概念与本质，梳理框架", hours:2, materials:"《教育学》王道明 第1-2章" }
+    ]},
+    { day:16, date:"2026-08-09", weekday:"周日", phase:"全职", tasks:[
+      { subject:"333教育综合", content:"教育学原理：教育与社会发展、与人的发展", hours:2, materials:"《教育学》第3-4章" },
+      { subject:"803教育管理", content:"教育管理前沿：教育改革与管理创新", hours:2, materials:"《教育管理学》第16章" },
+      { subject:"英语二", content:"单词Unit27-28背记 + 真题2013 Text4精读", hours:2, materials:"《恋练有词》+ 真题2013" },
+      { subject:"333教育综合", content:"教育学原理：教育目的与制度", hours:2, materials:"《教育学》第5-6章" }
+    ]},
+    { day:17, date:"2026-08-10", weekday:"周一", phase:"全职", tasks:[
+      { subject:"333教育综合", content:"教育学原理：课程理论与实践", hours:2, materials:"《教育学》第7章" },
+      { subject:"803教育管理", content:"教育管理研究方法与课题管理", hours:2, materials:"《教育管理学》第17章" },
+      { subject:"英语二", content:"单词Unit29-30背记 + 真题2014 Text1精读", hours:2, materials:"《恋练有词》+ 真题2014" },
+      { subject:"333教育综合", content:"教育学原理：教学理论与实践（上）", hours:2, materials:"《教育学》第8章" }
+    ]},
+    { day:18, date:"2026-08-11", weekday:"周二", phase:"全职", tasks:[
+      { subject:"333教育综合", content:"教育学原理：教学理论与实践（下）", hours:2, materials:"《教育学》第8章" },
+      { subject:"803教育管理", content:"803教材第1-8章知识点回顾梳理", hours:2, materials:"《教育管理学》笔记" },
+      { subject:"英语二", content:"单词Unit31-32背记 + 真题2014 Text2精读", hours:2, materials:"《恋练有词》+ 真题2014" },
+      { subject:"333教育综合", content:"教育学原理：德育理论与实践", hours:2, materials:"《教育学》第9章" }
+    ]},
+    { day:19, date:"2026-08-12", weekday:"周三", phase:"全职", tasks:[
+      { subject:"333教育综合", content:"教育学原理：班主任与班级管理", hours:2, materials:"《教育学》第10章" },
+      { subject:"803教育管理", content:"803教材第9-17章知识点回顾梳理", hours:2, materials:"《教育管理学》笔记" },
+      { subject:"英语二", content:"单词Unit33-34背记 + 真题2014 Text3精读", hours:2, materials:"《恋练有词》+ 真题2014" },
+      { subject:"333教育综合", content:"教育学原理：教师与学生（教原收尾）", hours:2, materials:"《教育学》第11-12章" }
+    ]},
+    { day:20, date:"2026-08-13", weekday:"周四", phase:"全职", tasks:[
+      { subject:"333教育综合", content:"教育学原理一轮回顾与框架默写", hours:2, materials:"《教育学》全册笔记" },
       { subject:"803教育管理", content:"803核心概念梳理：名词解释整理", hours:2, materials:"《教育管理学》名词解释手册" },
-      { subject:"英语二", content:"单词Unit35-36 + 真题2014 Text4精读", hours:2, materials:"《恋练有词》+ 真题2014" },
-      { subject:"333教育综合", content:"教育心理学：真题选择题专项练习", hours:2, materials:"333统考真题汇编" }
+      { subject:"英语二", content:"单词Unit35-36背记 + 真题2014 Text4精读", hours:2, materials:"《恋练有词》+ 真题2014" },
+      { subject:"333教育综合", content:"教育学原理：真题选择题专项练习", hours:2, materials:"333统考真题汇编" }
     ]},
     { day:21, date:"2026-08-14", weekday:"周五", phase:"全职", tasks:[
-      { subject:"333教育综合", content:"教育心理学一轮回顾与框架默写", hours:2, materials:"《教育心理学》全册笔记" },
+      { subject:"333教育综合", content:"333四科框架整体梳理与知识点串联", hours:2, materials:"333四科框架笔记" },
       { subject:"803教育管理", content:"803简答题高频考点整理（上）", hours:2, materials:"《教育管理学》简答题笔记" },
-      { subject:"英语二", content:"单词Unit25-36复习测 + 长难句4句精析", hours:2, materials:"《恋练有词》+ 真题2015 Text1" },
+      { subject:"英语二", content:"单词Unit25-36复习测 + 真题2015 Text1精读", hours:2, materials:"《恋练有词》+ 真题2015" },
       { subject:"333教育综合", content:"333四科交叉知识点专题梳理", hours:2, materials:"333综合笔记" }
     ]},
-
     // ===== 第四周 8.15-8.21 =====
     { day:22, date:"2026-08-15", weekday:"周六", phase:"全职", tasks:[
       { subject:"333教育综合", content:"教育学原理：论述题答题训练（教育与社会）", hours:2, materials:"333论述题专项" },
       { subject:"803教育管理", content:"803简答题高频考点整理（下）", hours:2, materials:"《教育管理学》简答题笔记" },
-      { subject:"英语二", content:"单词Unit37-38 + 真题2015 Text2精读", hours:2, materials:"《恋练有词》+ 真题2015" },
+      { subject:"英语二", content:"单词Unit37-38背记 + 真题2015 Text2精读", hours:2, materials:"《恋练有词》+ 真题2015" },
       { subject:"333教育综合", content:"中国教育史：论述题答题训练", hours:2, materials:"333论述题专项" }
     ]},
     { day:23, date:"2026-08-16", weekday:"周日", phase:"全职", tasks:[
       { subject:"333教育综合", content:"外国教育史：论述题答题训练", hours:2, materials:"333论述题专项" },
       { subject:"803教育管理", content:"803论述题高频考点整理与模板", hours:2, materials:"《教育管理学》论述题笔记" },
-      { subject:"英语二", content:"单词Unit39-40 + 真题2015 Text3精读", hours:2, materials:"《恋练有词》+ 真题2015" },
+      { subject:"英语二", content:"单词Unit39-40背记 + 真题2015 Text3精读", hours:2, materials:"《恋练有词》+ 真题2015" },
       { subject:"333教育综合", content:"教育心理学：材料分析题答题训练", hours:2, materials:"333材料分析专项" }
     ]},
     { day:24, date:"2026-08-17", weekday:"周一", phase:"全职", tasks:[
@@ -244,114 +241,111 @@ const kaoyanPlan = {
     { day:25, date:"2026-08-18", weekday:"周二", phase:"全职", tasks:[
       { subject:"333教育综合", content:"333统考真题2023年完整模拟与分析", hours:2, materials:"333统考真题2023" },
       { subject:"803教育管理", content:"803历年真题精讲（2021年）", hours:2, materials:"河北师大803真题" },
-      { subject:"英语二", content:"英语二真题2016 Text1精读 + 长难句", hours:2, materials:"真题2016" },
+      { subject:"英语二", content:"真题2016 Text1精读 + 单词复测", hours:2, materials:"真题2016" },
       { subject:"333教育综合", content:"333统考真题2023年错题复盘", hours:2, materials:"333统考真题2023" }
     ]},
     { day:26, date:"2026-08-19", weekday:"周三", phase:"全职", tasks:[
-      { subject:"333教育综合", content:"333第二轮：教育学原理知识框架强化背诵", hours:2, materials:"333教原框架笔记" },
+      { subject:"333教育综合", content:"333第二轮：中教史知识框架强化背诵", hours:2, materials:"333中教史框架笔记" },
       { subject:"803教育管理", content:"803第二轮：第1-5章核心知识点背诵", hours:2, materials:"《教育管理学》背诵笔记" },
-      { subject:"英语二", content:"英语二真题2016 Text2精读 + 单词复测", hours:2, materials:"真���2016" },
-      { subject:"333教育综合", content:"333第二轮：中国教育史框架强化背诵", hours:2, materials:"333中教史框架笔记" }
+      { subject:"英语二", content:"真题2016 Text2精读 + 单词复测", hours:2, materials:"真题2016" },
+      { subject:"333教育综合", content:"333第二轮：外教史框架强化背诵", hours:2, materials:"333外教史框架笔记" }
     ]},
     { day:27, date:"2026-08-20", weekday:"周四", phase:"全职", tasks:[
-      { subject:"333教育综合", content:"333第二轮：外国教育史框架强化背诵", hours:2, materials:"333外教史框架笔记" },
+      { subject:"333教育综合", content:"333第二轮：教育心理学框架强化背诵", hours:2, materials:"333教心框架笔记" },
       { subject:"803教育管理", content:"803第二轮：第6-10章核心知识点背诵", hours:2, materials:"《教育管理学》背诵笔记" },
-      { subject:"英语二", content:"英语二真题2016 Text3精读 + 长难句", hours:2, materials:"真题2016" },
-      { subject:"333教育综合", content:"333第二轮：教育心理学框架强化背诵", hours:2, materials:"333教心框架笔记" }
+      { subject:"英语二", content:"真题2016 Text3精读 + 单词复测", hours:2, materials:"真题2016" },
+      { subject:"333教育综合", content:"333第二轮：教育学原理框架强化背诵", hours:2, materials:"333教原框架笔记" }
     ]},
     { day:28, date:"2026-08-21", weekday:"周五", phase:"全职", tasks:[
       { subject:"333教育综合", content:"333四科框架默写检测与查漏", hours:2, materials:"333框架默写纸" },
       { subject:"803教育管理", content:"803第二轮：第11-17章核心知识点背诵", hours:2, materials:"《教育管理学》背诵笔记" },
-      { subject:"英语二", content:"英语二真题2016 Text4精读 + 单词复测", hours:2, materials:"真题2016" },
+      { subject:"英语二", content:"真题2016 Text4精读 + 单词复测", hours:2, materials:"真题2016" },
       { subject:"333教育综合", content:"333高频考点交叉测试", hours:2, materials:"333高频考点手册" }
     ]},
-
-    // ===== 第五周 8.22-8.25（最后4天）=====
+    // ===== 第五周 8.22-8.25（最后4天） =====
     { day:29, date:"2026-08-22", weekday:"周六", phase:"全职", tasks:[
       { subject:"333教育综合", content:"333全真模拟测试（限时3小时）", hours:2, materials:"333模拟卷A" },
       { subject:"803教育管理", content:"803全真模拟测试（限时3小时，前半段）", hours:2, materials:"803模拟卷A" },
-      { subject:"英语二", content:"英语二真题2017 Text1-2精读", hours:2, materials:"真题2017" },
+      { subject:"英语二", content:"真题2017 Text1-2精读 + 单词复测", hours:2, materials:"真题2017" },
       { subject:"333教育综合", content:"333模拟卷A详细复盘与错题整理", hours:2, materials:"333模拟卷A" }
     ]},
     { day:30, date:"2026-08-23", weekday:"周日", phase:"全职", tasks:[
-      { subject:"333教育综合", content:"333第二轮背诵查漏：教原+中教史薄弱点", hours:2, materials:"333背诵笔记" },
-      { subject:"803教育管理", content:"803���真模拟测试（限时3小时，后半段）+复盘", hours:2, materials:"803模拟卷A" },
-      { subject:"英语二", content:"英语二真题2017 Text3-4精读", hours:2, materials:"真题2017" },
-      { subject:"333教育综合", content:"333第二轮背诵查漏：外教史+教心薄弱点", hours:2, materials:"333背诵笔记" }
+      { subject:"333教育综合", content:"333第二轮背诵查漏：中教史+外教史薄弱点", hours:2, materials:"333背诵笔记" },
+      { subject:"803教育管理", content:"803全真模拟测试（限时3小时，后半段）+复盘", hours:2, materials:"803模拟卷A" },
+      { subject:"英语二", content:"真题2017 Text3-4精读 + 单词复测", hours:2, materials:"真题2017" },
+      { subject:"333教育综合", content:"333第二轮背诵查漏：教心+教原薄弱点", hours:2, materials:"333背诵笔记" }
     ]},
     { day:31, date:"2026-08-24", weekday:"周一", phase:"全职", tasks:[
       { subject:"333教育综合", content:"333高频论述题集中训练（10题）", hours:2, materials:"333论述题库" },
       { subject:"803教育管理", content:"803高频论述题集中训练（8题）", hours:2, materials:"803论述题库" },
-      { subject:"英语二", content:"英语二真题2018 Text1-2精读 + 单词总复测", hours:2, materials:"真题2018" },
+      { subject:"英语二", content:"真题2018 Text1-2精读 + 单词总复测", hours:2, materials:"真题2018" },
       { subject:"333教育综合", content:"333材料分析题专项强化训练", hours:2, materials:"333材料分析题库" }
     ]},
     { day:32, date:"2026-08-25", weekday:"周二", phase:"全职", tasks:[
       { subject:"333教育综合", content:"全职阶段总复习：四科框架终极默写", hours:2, materials:"333全框架笔记" },
       { subject:"803教育管理", content:"全职阶段总复习：全书知识点思维导图", hours:2, materials:"《教育管理学》思维导图" },
-      { subject:"英语二", content:"英语二真题2018 Text3-4精读 + 全阶段总结", hours:2, materials:"真题2018" },
+      { subject:"英语二", content:"真题2018 Text3-4精读 + 全阶段总结", hours:2, materials:"真题2018" },
       { subject:"333教育综合", content:"全职阶段总结与在职阶段计划制定", hours:2, materials:"复习计划文档" }
-    ]}
+    ]},
   ],
 
   inService: [
-    // ===== 9月（第1-4周）333第二轮背框架 + 803整理笔记 + 英语真题2014-2018 =====
-    { week:1, dateRange:"08.26-09.01", theme:"333第二轮·教育学原理背框架 + 英语真题2014", weekday:{ subject1:"英语二", content1:"真题2014 Text1-2精读+单词", hours1:1.5, subject2:"333", content2:"教原第1-4章框架背诵", hours2:2 }, weekend:[
-      { day:"周六", subject:"333", content:"教原第5-8章框架背诵", hours:2 },
+    { week:1, dateRange:"08.26-09.01", theme:"333第二轮·中教史背框架 + 英语真题2014", weekday:{ subject1:"英语二", content1:"真题2014 Text1-2精读+单词", hours1:1.5, subject2:"333", content2:"中教史第1-4章框架背诵", hours2:2 }, weekend:[
+      { day:"周六", subject:"333", content:"中教史第5-8章框架背诵", hours:2 },
       { day:"周六", subject:"803", content:"第1-3章笔记整理与思维导图", hours:2 },
       { day:"周六", subject:"英语二", content:"真题2014 Text3-4精读+翻译练习", hours:2 },
-      { day:"周六", subject:"333", content:"中教史第1-4章框架回顾", hours:2 },
-      { day:"周日", subject:"333", content:"教原第9-12章框架背诵", hours:2 },
+      { day:"周六", subject:"333", content:"外教史第1-4章框架预习", hours:2 },
+      { day:"周日", subject:"333", content:"中教史第9章+全章框架默写", hours:2 },
       { day:"周日", subject:"803", content:"第4-6章笔记整理", hours:2 },
       { day:"周日", subject:"英语二", content:"真题2014完形+新题型", hours:2 },
-      { day:"周日", subject:"333", content:"教原全章框架默写检测", hours:2 }
-    ], englishProgress:"完成真题2014全套精读", progress333:"教原第二轮框架背诵完成", progress803:"第1-6章笔记整理完成", politicsProgress:"未开始", keyMilestone:"完成英语二2014真题全套+333教原第二轮框架" },
+      { day:"周日", subject:"333", content:"中教史全章框架默写检测", hours:2 },
+    ], englishProgress:"完成真题2014全套精读", progress333:"中教史第二轮框架背诵完成", progress803:"第1-6章笔记整理完成", politicsProgress:"未开始", keyMilestone:"完成英语二2014真题全套+333中教史第二轮框架" },
 
-    { week:2, dateRange:"09.02-09.08", theme:"333第二轮·中外教育史背框架 + 英语真题2015", weekday:{ subject1:"英语二", content1:"真题2015 Text1-2精读+单词", hours1:1.5, subject2:"333", content2:"中教史框架背诵", hours2:2 }, weekend:[
-      { day:"周六", subject:"333", content:"中教史第5-8章框架背诵", hours:2 },
+    { week:2, dateRange:"09.02-09.08", theme:"333第二轮·外教史背框架 + 英语真题2015", weekday:{ subject1:"英语二", content1:"真题2015 Text1-2精读+单词", hours1:1.5, subject2:"333", content2:"外教史第1-4章框架背诵", hours2:2 }, weekend:[
+      { day:"周六", subject:"333", content:"外教史第5-9章框架背诵", hours:2 },
       { day:"周六", subject:"803", content:"第7-9章笔记整理", hours:2 },
       { day:"周六", subject:"英语二", content:"真题2015 Text3-4精读+翻译", hours:2 },
-      { day:"周六", subject:"333", content:"外教史第1-4章框架背诵", hours:2 },
-      { day:"周日", subject:"333", content:"外教史第5-9章框架背诵", hours:2 },
+      { day:"周六", subject:"333", content:"教心第1-4章框架预习", hours:2 },
+      { day:"周日", subject:"333", content:"外教史全章框架默写检测", hours:2 },
       { day:"周日", subject:"803", content:"第10-12章笔记整理", hours:2 },
       { day:"周日", subject:"英语二", content:"真题2015完形+新题型", hours:2 },
-      { day:"周日", subject:"333", content:"中外教育史框架默写检测", hours:2 }
-    ], englishProgress:"完成真题2015全套精读", progress333:"中外教育史第二轮框架完成", progress803:"第7-12章笔记整理完成", politicsProgress:"未开始", keyMilestone:"完成英语二2015真题+333中外教育史第二轮框架" },
+      { day:"周日", subject:"333", content:"中外教育史框架交叉默写", hours:2 },
+    ], englishProgress:"完成真题2015全套精读", progress333:"外教史第二轮框架完成", progress803:"第7-12章笔记整理完成", politicsProgress:"未开始", keyMilestone:"完成英语二2015真题+333外教史第二轮框架" },
 
-    { week:3, dateRange:"09.09-09.15", theme:"333第二轮·教育心理学背框架 + 英语真题2016", weekday:{ subject1:"英语二", content1:"真题2016 Text1-2精读+单词", hours1:1.5, subject2:"333", content2:"教心框架背诵", hours2:2 }, weekend:[
-      { day:"周六", subject:"333", content:"教心第1-5章框架背诵", hours:2 },
+    { week:3, dateRange:"09.09-09.15", theme:"333第二轮·教育心理学背框架 + 英语真题2016", weekday:{ subject1:"英语二", content1:"真题2016 Text1-2精读+单词", hours1:1.5, subject2:"333", content2:"教心第1-5章框架背诵", hours2:2 }, weekend:[
+      { day:"周六", subject:"333", content:"教心第6-10章框架背诵", hours:2 },
       { day:"周六", subject:"803", content:"第13-15章笔记整理", hours:2 },
       { day:"周六", subject:"英语二", content:"真题2016 Text3-4精读+翻译", hours:2 },
-      { day:"周六", subject:"333", content:"教心第6-10章框架背诵", hours:2 },
-      { day:"周日", subject:"333", content:"333四科框架交叉默写", hours:2 },
+      { day:"周六", subject:"333", content:"教原第1-4章框架预习", hours:2 },
+      { day:"周日", subject:"333", content:"教心全章框架默写检测", hours:2 },
       { day:"周日", subject:"803", content:"第16-17章笔记整理+全书导图", hours:2 },
       { day:"周日", subject:"英语二", content:"真题2016完形+新题型", hours:2 },
-      { day:"周日", subject:"333", content:"333第二轮总检测（选择+简答）", hours:2 }
-    ], englishProgress:"完成真题2016全套精读", progress333:"教心第二轮框架完成，333四科第二轮结束", progress803:"全书笔记整理完成", politicsProgress:"未开始", keyMilestone:"完成英语二2016真题+333四科第二轮框架全部完成" },
+      { day:"周日", subject:"333", content:"333中教+外教+教心框架交叉默写", hours:2 },
+    ], englishProgress:"完成真题2016全套精读", progress333:"教心第二轮框架完成，333前三科第二轮结束", progress803:"全书笔记整理完成", politicsProgress:"未开始", keyMilestone:"完成英语二2016真题+333教心第二轮框架完成" },
 
-    { week:4, dateRange:"09.16-09.22", theme:"803笔记定稿 + 英语真题2017 + 333真题刷题", weekday:{ subject1:"英语二", content1:"真题2017 Text1-2精读+单词", hours1:1.5, subject2:"333", content2:"333统考真题2024选择题", hours2:2 }, weekend:[
-      { day:"周六", subject:"333", content:"333统考真题2023年完整模考", hours:2 },
+    { week:4, dateRange:"09.16-09.22", theme:"333第二轮·教育学原理背框架 + 英语真题2017 + 333真题刷题", weekday:{ subject1:"英语二", content1:"真题2017 Text1-2精读+单词", hours1:1.5, subject2:"333", content2:"教原第1-4章框架背诵", hours2:2 }, weekend:[
+      { day:"周六", subject:"333", content:"教原第5-8章框架背诵", hours:2 },
       { day:"周六", subject:"803", content:"803笔记定稿+高频名词解释整理", hours:2 },
       { day:"周六", subject:"英语二", content:"真题2017 Text3-4精读+翻译", hours:2 },
-      { day:"周六", subject:"333", content:"333真题2023年错题复盘", hours:2 },
-      { day:"周日", subject:"333", content:"333统考真题2022年完整模考", hours:2 },
+      { day:"周六", subject:"333", content:"333统考真题2024选择题", hours:2 },
+      { day:"周日", subject:"333", content:"教原第9-12章框架背诵+全章默写", hours:2 },
       { day:"周日", subject:"803", content:"803高频简答题整理与背诵", hours:2 },
       { day:"周日", subject:"英语二", content:"真题2017完形+新题型", hours:2 },
-      { day:"周日", subject:"333", content:"333真题2022年错题复盘", hours:2 }
-    ], englishProgress:"完成真题2017全套精读", progress333:"333真题2022-2024模考完成", progress803:"笔记定稿+名词解释/简答题整理完成", politicsProgress:"未开始", keyMilestone:"完成英语二2017真题+333近三年真题模考" },
+      { day:"周日", subject:"333", content:"333统考真题2023年完整模考", hours:2 },
+    ], englishProgress:"完成真题2017全套精读", progress333:"教原第二轮框架完成，333四科第二轮全部结束", progress803:"笔记定稿+名词解释/简答题整理完成", politicsProgress:"未开始", keyMilestone:"完成英语二2017真题+333四科第二轮框架全部完成" },
 
-    // ===== 10月（第5-8周）政治加入 + 333第三轮默写 + 803第一轮背诵 + 英语真题2018-2022 =====
-    { week:5, dateRange:"09.23-09.29", theme:"政治启动（马原）+ 英语真题2018 + 803第一轮背诵启动", weekday:{ subject1:"英语二", content1:"真题2018 Text1-2精读+单词", hours1:1.5, subject2:"803", content2:"第1-3章第一轮背诵", hours2:2 }, weekend:[
+    { week:5, dateRange:"09.23-09.29", theme:"政治启动（马原）+ 英语真题2018 + 803第一轮背诵启动 + 333真题刷题", weekday:{ subject1:"英语二", content1:"真题2018 Text1-2精读+单词", hours1:1.5, subject2:"803", content2:"第1-3章第一轮背诵", hours2:2 }, weekend:[
       { day:"周六", subject:"政治", content:"马原第1-2章+肖1000题对应", hours:2 },
-      { day:"周六", subject:"333", content:"333第三轮：教原默写（上）", hours:2 },
+      { day:"周六", subject:"333", content:"333统考真题2022年完整模考", hours:2 },
       { day:"周六", subject:"英语二", content:"真题2018 Text3-4+翻译", hours:2 },
       { day:"周六", subject:"803", content:"第4-6章第一轮背诵", hours:2 },
       { day:"周日", subject:"政治", content:"马原第3-4章+肖1000题", hours:2 },
-      { day:"周日", subject:"333", content:"333第三轮：教原默写（下）", hours:2 },
+      { day:"周日", subject:"333", content:"333真题2022年错题复盘", hours:2 },
       { day:"周日", subject:"英语二", content:"真题2018完形+新题型", hours:2 },
-      { day:"周日", subject:"803", content:"第7-9章第一轮背诵", hours:2 }
-    ], englishProgress:"完成真题2018全套精读", progress333:"教原第三轮默写完成", progress803:"第1-9章第一轮背诵", politicsProgress:"马原启动，肖1000题开始", keyMilestone:"政治正式启动+英语二2018真题完成" },
+      { day:"周日", subject:"803", content:"第7-9章第一轮背诵", hours:2 },
+    ], englishProgress:"完成真题2018全套精读", progress333:"333近三年真题模考完成", progress803:"第1-9章第一轮背诵", politicsProgress:"马原启动，肖1000题开始", keyMilestone:"政治正式启动+英语二2018真题完成" },
 
-    { week:6, dateRange:"09.30-10.06", theme:"政治马原收尾+毛中特启动 + 333第三轮中外教史 + 英语真题2019", weekday:{ subject1:"英语二", content1:"真题2019 Text1-2精读+单词", hours1:1.5, subject2:"333", content2:"中教史第三轮默写", hours2:2 }, weekend:[
+    { week:6, dateRange:"09.30-10.06", theme:"政治马原收尾+毛中特启动 + 333第三轮中教史 + 英语真题2019", weekday:{ subject1:"英语二", content1:"真题2019 Text1-2精读+单词", hours1:1.5, subject2:"333", content2:"中教史第三轮默写", hours2:2 }, weekend:[
       { day:"周六", subject:"政治", content:"马原收尾+毛中特第1-2章+肖1000题", hours:2 },
       { day:"周六", subject:"333", content:"外教史第三轮默写（上）", hours:2 },
       { day:"周六", subject:"英语二", content:"真题2019 Text3-4+翻译", hours:2 },
@@ -359,44 +353,43 @@ const kaoyanPlan = {
       { day:"周日", subject:"政治", content:"毛中特第3-4章+肖1000题", hours:2 },
       { day:"周日", subject:"333", content:"外教史第三轮默写（下）", hours:2 },
       { day:"周日", subject:"英语二", content:"真题2019完形+新题型", hours:2 },
-      { day:"周日", subject:"803", content:"第14-17章第一轮背诵", hours:2 }
+      { day:"周日", subject:"803", content:"第14-17章第一轮背诵", hours:2 },
     ], englishProgress:"完成真题2019全套精读", progress333:"中外教育史第三轮默写完成", progress803:"全书第一轮背诵完成", politicsProgress:"马原完成，毛中特进行中", keyMilestone:"完成英语二2019真题+803全书第一轮背诵完成" },
 
     { week:7, dateRange:"10.07-10.13", theme:"政治毛中特+史纲 + 333第三轮教心 + 英语真题2020 + 803二轮启动", weekday:{ subject1:"英语二", content1:"真题2020 Text1-2精读+单词", hours1:1.5, subject2:"333", content2:"教心第三轮默写", hours2:2 }, weekend:[
       { day:"周六", subject:"政治", content:"毛中特收尾+史纲第1-3章+肖1000题", hours:2 },
-      { day:"周六", subject:"333", content:"333第三轮总检测（四科交叉默写）", hours:2 },
+      { day:"周六", subject:"333", content:"教原第三轮默写（上）", hours:2 },
       { day:"周六", subject:"英语二", content:"真题2020 Text3-4+翻译", hours:2 },
       { day:"周六", subject:"803", content:"第1-5章第二轮背诵", hours:2 },
       { day:"周日", subject:"政治", content:"史纲第4-7章+肖1000题", hours:2 },
-      { day:"周日", subject:"333", content:"333论述题专项训练（8题）", hours:2 },
+      { day:"周日", subject:"333", content:"教原第三轮默写（下）+四科交叉默写", hours:2 },
       { day:"周日", subject:"英语二", content:"真题2020完形+新题型", hours:2 },
-      { day:"周日", subject:"803", content:"第6-10章第二轮背诵", hours:2 }
-    ], englishProgress:"完成真题2020全套精读", progress333:"教心第三轮完成，333第三轮全部结束", progress803:"第1-10章第二轮背诵", politicsProgress:"毛中特完成，史纲进行中", keyMilestone:"完成英语二2020真题+333第三轮全部完成" },
+      { day:"周日", subject:"803", content:"第6-10章第二轮背诵", hours:2 },
+    ], englishProgress:"完成真题2020全套精读", progress333:"教心+教原第三轮完成，333第三轮全部结束", progress803:"第1-10章第二轮背诵", politicsProgress:"毛中特完成，史纲进行中", keyMilestone:"完成英语二2020真题+333第三轮全部完成" },
 
-    { week:8, dateRange:"10.14-10.20", theme:"政治史纲收尾+思修 + 英语真题2021-2022 + 803二轮收尾", weekday:{ subject1:"英语二", content1:"真题2021 Text1-2精读+单词", hours1:1.5, subject2:"803", content2:"第11-14章第二轮背诵", hours2:2 }, weekend:[
+    { week:8, dateRange:"10.14-10.20", theme:"政治史纲收尾+思修 + 英语真题2021-2022 + 803二轮收尾 + 333论述训练", weekday:{ subject1:"英语二", content1:"真题2021 Text1-2精读+单词", hours1:1.5, subject2:"803", content2:"第11-14章第二轮背诵", hours2:2 }, weekend:[
       { day:"周六", subject:"政治", content:"史纲收尾+思修第1-3章+肖1000题", hours:2 },
-      { day:"周六", subject:"333", content:"333材料分析题专项训练（6题）", hours:2 },
+      { day:"周六", subject:"333", content:"333论述题专项训练（8题）", hours:2 },
       { day:"周六", subject:"英语二", content:"真题2021 Text3-4+翻译", hours:2 },
       { day:"周六", subject:"803", content:"第15-17章第二轮背诵", hours:2 },
       { day:"周日", subject:"政治", content:"思修收尾+肖1000题二刷（马原）", hours:2 },
       { day:"周日", subject:"333", content:"333统考真题2021年模考", hours:2 },
       { day:"周日", subject:"英语二", content:"真题2022 Text1-2+完形", hours:2 },
-      { day:"周日", subject:"803", content:"803第二轮总检测", hours:2 }
-    ], englishProgress:"完成真题2021全套+2022前半", progress333:"材料分析题专项完成", progress803:"第二轮背诵全部完成", politicsProgress:"史纲思修完成，肖1000一刷结束", keyMilestone:"政治肖1000一刷完成+英语二2021真题完成" },
+      { day:"周日", subject:"803", content:"803第二轮总检测", hours:2 },
+    ], englishProgress:"完成真题2021全套+2022前半", progress333:"论述题专项完成", progress803:"第二轮背诵全部完成", politicsProgress:"史纲思修完成，肖1000一刷结束", keyMilestone:"政治肖1000一刷完成+英语二2021真题完成" },
 
-    // ===== 11月（第9-12周）政治背诵+肖8 + 333第四轮 + 803第二轮背诵 + 英语作文模板+真题二刷 =====
-    { week:9, dateRange:"10.21-10.27", theme:"政治肖8启动+背诵 + 333第四轮启动 + 英语真题2022完成+作文启动", weekday:{ subject1:"英语二", content1:"真题2022 Text3-4+新题型+作文入门", hours1:1.5, subject2:"333", content2:"教原第四轮精背", hours2:2 }, weekend:[
+    { week:9, dateRange:"10.21-10.27", theme:"政治肖8启动+背诵 + 333第四轮启动 + 英语真题2022完成+作文启动", weekday:{ subject1:"英语二", content1:"真题2022 Text3-4+新题型+作文入门", hours1:1.5, subject2:"333", content2:"中教史第四轮精背", hours2:2 }, weekend:[
       { day:"周六", subject:"政治", content:"肖8第1-4套选择题+分析", hours:2 },
-      { day:"周六", subject:"333", content:"中教史第四轮精背", hours:2 },
+      { day:"周六", subject:"333", content:"外教史第四轮精背", hours:2 },
       { day:"周六", subject:"英语二", content:"英语二大作文模板整理+小作文格式", hours:2 },
       { day:"周六", subject:"803", content:"803高频论述题背诵（上）", hours:2 },
       { day:"周日", subject:"政治", content:"肖8第5-8套选择题+分析", hours:2 },
-      { day:"周日", subject:"333", content:"外教史第四轮精背", hours:2 },
+      { day:"周日", subject:"333", content:"教心第四轮精背", hours:2 },
       { day:"周日", subject:"英语二", content:"大作文模板仿写练习2篇", hours:2 },
-      { day:"周日", subject:"803", content:"803高频论述题背诵（下）", hours:2 }
-    ], englishProgress:"完成真题2022全套+作文模板整理", progress333:"教原+中外教史第四轮精背", progress803:"高频论述题背诵完成", politicsProgress:"肖8选择题完成", keyMilestone:"完成英语二2022真题+肖8选择题+英语作文模板成型" },
+      { day:"周日", subject:"803", content:"803高频论述题背诵（下）", hours:2 },
+    ], englishProgress:"完成真题2022全套+作文模板整理", progress333:"中教+外教+教心第四轮精背", progress803:"高频论述题背诵完成", politicsProgress:"肖8选择题完成", keyMilestone:"完成英语二2022真题+肖8选择题+英语作文模板成型" },
 
-    { week:10, dateRange:"10.28-11.03", theme:"政治肖8分析题+背诵 + 333第四轮收尾 + 英语真题二刷2014-2015 + 803三轮", weekday:{ subject1:"英语二", content1:"真题2014二刷（阅读限时）", hours1:1.5, subject2:"333", content2:"教心第四轮精背", hours2:2 }, weekend:[
+    { week:10, dateRange:"10.28-11.03", theme:"政治肖8分析题+背诵 + 333第四轮收尾 + 英语真题二刷2014-2015 + 803三轮", weekday:{ subject1:"英语二", content1:"真题2014二刷（阅读限时）", hours1:1.5, subject2:"333", content2:"教原第四轮精背", hours2:2 }, weekend:[
       { day:"周六", subject:"政治", content:"肖8分析题第1-4套背诵", hours:2 },
       { day:"周六", subject:"333", content:"333第四轮总检测（四科默写）", hours:2 },
       { day:"周六", subject:"英语二", content:"真题2015二刷（阅读限时）", hours:2 },
@@ -404,18 +397,18 @@ const kaoyanPlan = {
       { day:"周日", subject:"政治", content:"肖8分析题第5-8套背诵", hours:2 },
       { day:"周日", subject:"333", content:"333错题本回顾与薄弱点强化", hours:2 },
       { day:"周日", subject:"英语二", content:"小作文模板仿写练习3篇", hours:2 },
-      { day:"周日", subject:"803", content:"803第三轮：第9-17章快速背诵", hours:2 }
+      { day:"周日", subject:"803", content:"803第三轮：第9-17章快速背诵", hours:2 },
     ], englishProgress:"真题2014-2015二刷完成", progress333:"第四轮全部完成", progress803:"第三轮快速背诵完成", politicsProgress:"肖8分析题背诵完成", keyMilestone:"333第四轮全部完成+肖8分析题背诵完成" },
 
-    { week:11, dateRange:"11.04-11.10", theme:"政治时政+背诵 + 333第五轮速背 + 英语真题二刷2016-2017 + 803四轮", weekday:{ subject1:"英语二", content1:"真题2016二刷（阅读限时）", hours1:1.5, subject2:"333", content2:"333第五轮速背（教原+中教史）", hours2:2 }, weekend:[
+    { week:11, dateRange:"11.04-11.10", theme:"政治时政+背诵 + 333第五轮速背 + 英语真题二刷2016-2017 + 803四轮", weekday:{ subject1:"英语二", content1:"真题2016二刷（阅读限时）", hours1:1.5, subject2:"333", content2:"333第五轮速背（中教+外教史）", hours2:2 }, weekend:[
       { day:"周六", subject:"政治", content:"时政热点梳理+肖1000二刷（毛中特）", hours:2 },
-      { day:"周六", subject:"333", content:"333第五轮速背（外教史+教心）", hours:2 },
+      { day:"周六", subject:"333", content:"333第五轮速背（教心+教原）", hours:2 },
       { day:"周六", subject:"英语二", content:"真题2017二刷+翻译强化", hours:2 },
       { day:"周六", subject:"803", content:"803第四轮：全书核心要点速过", hours:2 },
       { day:"周日", subject:"政治", content:"肖1000二刷（史纲+思修）+错题", hours:2 },
       { day:"周日", subject:"333", content:"333五轮薄弱点终极强化", hours:2 },
       { day:"周日", subject:"英语二", content:"大作文限时写作2篇", hours:2 },
-      { day:"周日", subject:"803", content:"803历年真题二刷（2021-2023）", hours:2 }
+      { day:"周日", subject:"803", content:"803历年真题二刷（2021-2023）", hours:2 },
     ], englishProgress:"真题2016-2017二刷完成", progress333:"第五轮速背完成", progress803:"第四轮速过完成", politicsProgress:"时政梳理+肖1000二刷完成", keyMilestone:"肖1000二刷完成+英语二真题2016-2017二刷" },
 
     { week:12, dateRange:"11.11-11.17", theme:"政治肖4启动 + 333全真模考 + 英语真题二刷2018-2019 + 803模考", weekday:{ subject1:"英语二", content1:"真题2018二刷（阅读限时）", hours1:1.5, subject2:"333", content2:"333全真模考卷B", hours2:2 }, weekend:[
@@ -426,10 +419,9 @@ const kaoyanPlan = {
       { day:"周日", subject:"政治", content:"肖4第3-4套选择题+分析题背诵", hours:2 },
       { day:"周日", subject:"333", content:"333高频考点终极速背", hours:2 },
       { day:"周日", subject:"英语二", content:"小作文限时写作3篇+模板优化", hours:2 },
-      { day:"周日", subject:"803", content:"803模考卷B复盘+高频题强化", hours:2 }
+      { day:"周日", subject:"803", content:"803模考卷B复盘+高频题强化", hours:2 },
     ], englishProgress:"真题2018-2019二刷完成", progress333:"模考卷B完成", progress803:"模考卷B完成", politicsProgress:"肖4选择题+分析题背诵完成", keyMilestone:"肖4全部完成+333/803模考卷B完成" },
 
-    // ===== 12月（第13-17周）冲刺背诵+模拟考试 =====
     { week:13, dateRange:"11.18-11.24", theme:"政治肖4背诵冲刺 + 333第六轮速背 + 英语真题二刷2020-2021 + 803五轮", weekday:{ subject1:"英语二", content1:"真题2020二刷（阅读限时）", hours1:1.5, subject2:"333", content2:"333第六轮速背（四科各重点）", hours2:2 }, weekend:[
       { day:"周六", subject:"政治", content:"肖4分析题一轮背诵+时政精背", hours:2 },
       { day:"周六", subject:"333", content:"333论述题终极训练（10题）", hours:2 },
@@ -438,7 +430,7 @@ const kaoyanPlan = {
       { day:"周日", subject:"政治", content:"肖4分析题二轮背诵", hours:2 },
       { day:"周日", subject:"333", content:"333材料分析终极训练（6题）", hours:2 },
       { day:"周日", subject:"英语二", content:"大作文限时写作2篇+模板终极优化", hours:2 },
-      { day:"周日", subject:"803", content:"803第五轮：高频论述题速背", hours:2 }
+      { day:"周日", subject:"803", content:"803第五轮：高频论述题速背", hours:2 },
     ], englishProgress:"真题2020-2021二刷完成", progress333:"第六轮速背+论述/材料分析训练", progress803:"第五轮速过完成", politicsProgress:"肖4分析题二轮背诵", keyMilestone:"肖4分析题二轮背诵+英语二真题2020-2021二刷完成" },
 
     { week:14, dateRange:"11.25-12.01", theme:"全科模考周 + 333/803/英语/政治各一次完整模考", weekday:{ subject1:"英语二", content1:"英语二完整模考（限时3小时）", hours1:2, subject2:"333", content2:"333统考真题2020年完整模考", hours2:2 }, weekend:[
@@ -449,18 +441,18 @@ const kaoyanPlan = {
       { day:"周日", subject:"政治", content:"政治模考复盘+分析题背诵强化", hours:2 },
       { day:"周日", subject:"333", content:"333第七轮速背（高频考点）", hours:2 },
       { day:"周日", subject:"英语二", content:"英语二真题2022二刷+作文限时", hours:2 },
-      { day:"周日", subject:"803", content:"803模考复盘+简答题强化", hours:2 }
+      { day:"周日", subject:"803", content:"803模考复盘+简答题强化", hours:2 },
     ], englishProgress:"英语完整模考完成", progress333:"统考真题2020模考完成", progress803:"真题2020模考完成", politicsProgress:"政治全真模考完成", keyMilestone:"四科各完成一次完整模考" },
 
-    { week:15, dateRange:"12.02-12.08", theme:"冲刺背诵周 + 333/803终极背诵 + 政治肖4三轮 + 英语作文冲刺", weekday:{ subject1:"英语二", content1:"英语作文限时写作+阅读保持", hours1:1.5, subject2:"333", content2:"333终极速背（教原+教心重点）", hours2:2 }, weekend:[
+    { week:15, dateRange:"12.02-12.08", theme:"冲刺背诵周 + 333/803终极背诵 + 政治肖4三轮 + 英语作文冲刺", weekday:{ subject1:"英语二", content1:"英语作文限时写作+阅读保持", hours1:1.5, subject2:"333", content2:"333终极速背（中教+外教史重点）", hours2:2 }, weekend:[
       { day:"周六", subject:"政治", content:"肖4分析题三轮背诵+时政终背", hours:2 },
-      { day:"周六", subject:"333", content:"333终极速背（中教史+外教史重点）", hours:2 },
+      { day:"周六", subject:"333", content:"333终极速背（教心+教原重点）", hours:2 },
       { day:"周六", subject:"英语二", content:"大作文限时2篇+小作文3篇", hours:2 },
       { day:"周六", subject:"803", content:"803终极背诵（高频论述题）", hours:2 },
       { day:"周日", subject:"政治", content:"肖1000错题三刷+肖4选择题三刷", hours:2 },
       { day:"周日", subject:"333", content:"333错题本终极回顾", hours:2 },
       { day:"周日", subject:"英语二", content:"英语二真题2022三刷（阅读限时）", hours:2 },
-      { day:"周日", subject:"803", content:"803错题本终极回顾", hours:2 }
+      { day:"周日", subject:"803", content:"803错题本终极回顾", hours:2 },
     ], englishProgress:"作文冲刺+真题2022三刷", progress333:"终极速背+错题回顾", progress803:"终极背诵+错题回顾", politicsProgress:"肖4三轮背诵+肖1000错题三刷", keyMilestone:"肖4三轮背诵完成+全科错题本回顾完成" },
 
     { week:16, dateRange:"12.09-12.15", theme:"考前模拟周 + 全科第二次完整模考 + 查漏补缺", weekday:{ subject1:"英语二", content1:"英语二第二次模考（限时3小时）", hours1:2, subject2:"333", content2:"333第二次模考（模拟卷C）", hours2:2 }, weekend:[
@@ -471,7 +463,7 @@ const kaoyanPlan = {
       { day:"周日", subject:"政治", content:"政治模考复盘+时政终极回顾", hours:2 },
       { day:"周日", subject:"333", content:"333全部框架终极默写", hours:2 },
       { day:"周日", subject:"英语二", content:"英语阅读保持+单词终极复测", hours:2 },
-      { day:"周日", subject:"803", content:"803模考复盘+全书思维导图终过", hours:2 }
+      { day:"周日", subject:"803", content:"803模考复盘+全书思维导图终过", hours:2 },
     ], englishProgress:"第二次模考完成+作文模板定稿", progress333:"第二次模考+框架终极默写", progress803:"第二次模考+思维导图终过", politicsProgress:"第二次模考+分析题终极背诵", keyMilestone:"全科第二次完整模考完成" },
 
     { week:17, dateRange:"12.16-12.19", theme:"考前最后冲刺（4天）+ 心态调整 + 考试用品准备", weekday:{ subject1:"政治", content1:"肖4+肖8分析题终极背诵", hours1:2, subject2:"333", content2:"333高频考点最后速过", hours2:2 }, weekend:[
@@ -482,10 +474,11 @@ const kaoyanPlan = {
       { day:"周日", subject:"政治", content:"时政+肖4分析题终背", hours:2 },
       { day:"周日", subject:"333", content:"333最核心30题终背", hours:2 },
       { day:"周日", subject:"英语二", content:"英语作文终稿模板默写", hours:2 },
-      { day:"周日", subject:"803", content:"803最核心20题终背", hours:2 }
-    ], englishProgress:"作文模板默写+阅读手感保持", progress333:"最核心30题终背", progress803:"最核心20题终背", politicsProgress:"肖4+时政终背", keyMilestone:"全科终极背诵完成，考前准备就绪" }
+      { day:"周日", subject:"803", content:"803最核心20题终背", hours:2 },
+    ], englishProgress:"作文模板默写+阅读手感保持", progress333:"最核心30题终背", progress803:"最核心20题终背", politicsProgress:"肖4+时政终背", keyMilestone:"全科终极背诵完成，考前准备就绪" },
   ]
 };
+
 // ============================================================
 // 于辣辣工作台 - 内容数据
 // 包含：口播选题库 / AI宠物100职业 / 控糖vlog选题 / 控糖餐食库 / 鼓励语库
@@ -1535,7 +1528,7 @@ const encouragements = {
     "认真生活的人，连风都会帮你的 🍃",
     "你走的每一步，都在靠近想成为的自己 ✦",
     "今天值得被记住，因为你没有敷衍 ✦",
-    "把日子过成诗的人，从来不怕平凡 📖",
+    "把日子过成诗的人，从来不怕平凡 ✦",
     "你今天的样子，就是未来回忆里的光 ✦",
     "认真对待每一餐的人，运气不会差 🍃",
     "坚持本身就是一种了不起的天赋 ✦",
@@ -1546,7 +1539,7 @@ const encouragements = {
     "生活偏爱那些不声不响努力的人 🍃",
     "你认真控糖的样子，真好看 ✦",
     "每一个清醒的早晨，都是新的开始 ✦",
-    "你的坚持，正在悄悄改写故事的结局 📖",
+    "你的坚持，正在悄悄改写故事的结局 ✦",
     "今天你选择的难，是明天的容易 ✦",
     "安静地发光，不必告诉全世界 ✦",
     "你对自己的温柔，身体都记得 🍃",
@@ -1563,7 +1556,7 @@ const encouragements = {
     "不是每一天都要闪闪发光 ✦",
     "允许自己偶尔不完美，也是一种勇敢 ✦",
     "今天没做好，明天还可以重来 🕊",
-    "你的价值不由今天的状态决定 📖",
+    "你的价值不由今天的状态决定 ✦",
     "慢一点也没关系，你还在路上 🌸",
     "好好吃一顿饭，就是对自己的温柔 🍃",
     "低落的时候，就去晒晒太阳吧 ✦",
@@ -1577,7 +1570,7 @@ const encouragements = {
     "你已经在努力了，这就够了 ✦",
     "不必和昨天比，今天的你刚刚好 ✦",
     "照顾好情绪，也是一种自律 🍃",
-    "允许脆弱，然后继续走 📖",
+    "允许脆弱，然后继续走 ✦",
     "今天就好好吃饭好好睡觉 🌸",
     "你不是在退步，只是在蓄力 ✦",
     "每个低谷都是上坡前的弯路 ✦",
